@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍌💲 Monkey money counter 💲🍌</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row pt-5">
+                <img src="./img/212.png" alt="" class="logo">
+                <h5 class="text-white">Money counter v2.0</h5>
+            </div>
+            <div class="row mt-3">
+                <h2 class="text-white">Цены</h2>
+                <div class="col-lg-5">
+                    
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Цена бота по панели</span>
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control bg-success text-white" id="bot_panel_price" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Скуп предлагает</span>
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control bg-success text-white" id="bot_market_price" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">КУРС ДОЛЛАРА</span>
+                        <span class="input-group-text" id="basic-addon3">₽</span>
+                        
+                        <input type="text" class="form-control bg-success text-white" id="dollar_price" aria-describedby="basic-addon3">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="row mt-3">
+                
+                <div class="col-lg-4">
+                    <h2 class="text-white">Проценты</h2>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Процент скупа</span>
+                        <span class="input-group-text">%</span>
+                        <input type="text" disabled class="form-control" id="market_percent" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Процент воркера</span>
+                        <span class="input-group-text">%</span>
+                        <input type="text" class="form-control bg-success text-white" id="worker_percent" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Процент нагрева</span>
+                        <span class="input-group-text">%</span>
+                        <input type="text" class="form-control bg-success text-white" id="cheat_percent" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="text-white">Выплаты</h2>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Выплата воркеру</span>
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" id="worker_profit_dollar" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Выплата воркеру</span>
+                        <span class="input-group-text">₽</span>
+                        <input type="text" class="form-control" id="worker_profit_rub" aria-describedby="basic-addon3">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row mt-3">
+                <h2 class="text-white">ПРОФИТ</h2>
+                <div class="col-lg-6">
+                    
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Доход</span>
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" id="team_profit_dollar" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group my-3">
+                        <span class="input-group-text" id="basic-addon3">Доход</span>
+                        <span class="input-group-text">₽</span>
+                        <input type="text" class="form-control" id="team_profit_rub" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
